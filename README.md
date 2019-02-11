@@ -2,11 +2,10 @@
 
 Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, spring 2019.
 
-In this workshop, we will create a map of tract-level cancer data for New York City that looks something like this:
+In this workshop, we will use QGIS create a map of tract-level cancer data for New York City.  The steps below could be modified to map other health variables, or other cities.  (The same methods could also be applied to any other spreadsheet of data that includes tract ids.)  The map we create for New York City will look something like this:
 
 ![Finished map image](finished-map-image.png)
 
-The steps in this tutorial could also be applied to other health variables, or other cities.
 
 
 ## Data sources
@@ -29,17 +28,72 @@ Those two data sources are sufficient to make a map.  But for New York City, whi
   * this global dataset was clipped to the area surrounding New York City
 
 
+
 ## Step by Step
 
-Load tract boundaries
-basic symbology
+1. Download the workshop data
 
-Load health data
-join tables
+    * Download the workshop folder from [https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip](https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip)
+    * Go to your downloads folder and unzip the file (right-click the file > 7-Zip > Extract Here)
+    It is very import to unzip the the .zip file -- things will not work otherwise!
 
-Graduated colors
+2. Run QGIS
 
-Cut water areas out of tracts
-save to new file
+    * Start menu > QGIS Desktop 3.4.3
 
-Basemap
+    QGIS is a free, open-source geographic information system that can be used to create maps and perform spatial analysis.  If you would like to install QGIS on your own Windows, Mac, or Linux computer, visit the QGIS web site at [qgis.org](http://qgis.org/)
+
+
+3. Load the tract boundaries
+
+    * Layer > Data Source Manager
+    * Select the "Vector" tab on the left
+    * Click the "..." button to browse to the `tracts-ny` folder within the unzipped workshop files
+    * Select the `tl_2018_36_tract.shp` file and click the "Open" button
+    * Click "Add" to add the selected shapefile to your map
+    * Click "Close" to close the data source manager
+
+    "Vector" means points, lines, and polygons.  In this case, the tract boundaries are polygons.
+    Shapefiles are an archaic spatial data format, but still commonly used.  Shapefiles are comprised of several separate files, all with the same name, but with different extensions.  In this case, all the files that start with `tl_2018_36_tract`.  When selecting the shapefile to load, pick the one with the `.shp` extension.
+
+
+4. Basic Styling
+
+    The shapefile only contains data, and lacks any sense of style.  The default polygon style is used with a random color, but we can change it.
+
+    * Click the colorful paintbrush above the list of layers on the left in order to open the "Layer Styling" panel.
+    * Adjust the size and position of the panel as necessary.
+    * To change the color, click the color bar to choose a new color.  There are many ways to select a color!  (I prefer the triangle within the circle.)
+    * When you are done selecting a color, click the back arrow near the top of the the Layer Styling dock.
+    * Clicking the "Simple fill" part of the style will let you adjust other things, such as the stroke (border) color and width.
+    * Experiment a bit, but be sure to end up with a black stroke, 0.26mm wide.
+
+
+5. Explore the tract boundary data
+
+    There are two basic ways to explore a shapefile:
+
+    * View the info for a specific polygon by selecting the "Identify Features" tool (blue circle with white "i") and then clicking a polygon -- 
+    * View the attribute table for the whole layer by right-clicking the layer name > Open Attribute Table
+
+    Notice that there is no demographic data in the boundary shapefile, just identifiers and geometric data.  We will join the 500 Cities data in order to have something interesting to map.
+
+
+6. Load the 500 Cities health data
+
+    * Layer > Data Source Manager
+    * Select the "Delimited Text" tab on the left
+    * Click the "..." button to browse to the top level of the workshop files
+    * Select the `cdc_500_cities.csv` file and click the "Open" button
+    * Click "Add" to add the selected shapefile to your map
+    * Click "Close" to close the data source manager
+
+7. Join tables
+
+8. Graduated colors
+
+9. Basemap
+
+10. Cut water areas out of tracts -- save to new file
+
+
