@@ -121,7 +121,7 @@ Be sure to save the join!
 Open the attribute table for the tract boundaries to see the joined data.  Note that some of the rows will have null values because they were not part of the 500 Cities dataset.
 
 
-8. Graduated colors
+**8. Graduated colors**
 
 Now that we have some interesting health data in our tract boundary attribute table, we can make a choropleth map, using the numeric values of a particular column to set the color of the corresponding polygon.
 
@@ -139,7 +139,7 @@ The default scaling mode is "equal interval", which is not usually the best way 
 You can change the number of classes (default is 5), and you can also change the color ramp -- click it to edit the colors.  There are many other ways to customize map styles in QGIS -- the possibilities are endless!
 
 
-9. Add a Basemap
+**9. Add a Basemap**
 
 Sometimes it is useful to load a global base layer from the web, to add context to your map, or just to help confirmthat your data is correctly aligned.  The QuickMapServices plugin makes this easy.  (It's already installed on the Mann Library computers.)
 
@@ -148,7 +148,7 @@ Sometimes it is useful to load a global base layer from the web, to add context 
 To avoid the pixelization caused by reprojecting the basemap image, right-click the basemap layer > Set CRS > Set Project CRS from Layer.  (CRS means Coordinate Reference System.)  In fact, the CRS of basemap is a better choice for ensuring that shapes on the ground are true, and not distorted (as in the case of the original latitude/longitude CRS that was being used when we first loaded the tract boundary shapefile).
 
 
-10. Creating a Print Layout
+**10. Creating a Print Layout**
 
 Now it's time to decide how our map will appear on a page, or in an exported image.  We can create a print layout that specifies the extent of the map we want to show (just New York City, for example).  With a print layout, we can also add a time, a legend, a scale bar, and other elements to the page.
 
@@ -167,7 +167,7 @@ By default, the map will be centered and scaled just as it appeared in the main 
 Now you can pan the map content, or zoom with the mouse wheel.  To zoom with finer control, hold the CTRL key while zooming.
 
 
-11. Add a title
+**11. Add a title**
 
 * Add Item > Add Label
 * Drag a box where you want the title to appear.
@@ -176,7 +176,7 @@ Now you can pan the map content, or zoom with the mouse wheel.  To zoom with fin
 * Font options are found in the "Appearance" section below the text
 
 
-12. Add a Legend
+**12. Add a Legend**
 
 * Add Item > Add Legend
 * Drag a box where you want the legend to appear.
@@ -189,7 +189,7 @@ The default legend is a bit ugly, as it uses the original layer names, and also 
 * Fonts can be adjusted in the "Fonts" section of the Item Properties.
 
 
-13. Add a Scale Bar
+**13. Add a Scale Bar**
 
 * Add Item > Add Scale Bar
 * Drag a box where you want the scale bar to appear.
@@ -197,7 +197,7 @@ The default legend is a bit ugly, as it uses the original layer names, and also 
 * Experiment with the Segments settings
 
 
-14. Export the map image
+**14. Export the map image**
 
 * Layout menu > Export as image (or PDF)
 
