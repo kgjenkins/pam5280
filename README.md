@@ -1,6 +1,9 @@
 # GIS Workshop for PAM 5280
 
-Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University
+Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, spring 2019.
+
+
+![Finished map image](finished-map-image.png)
 
 
 ## Data sources
@@ -24,4 +27,15 @@ TODO
 
 ## Step by Step
 
-TODO
+Load tract boundaries
+basic symbology
+
+Load health data
+join tables
+
+Graduated colors
+
+Cut water areas out of tracts
+save to new file
+
+Basemap
