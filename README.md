@@ -33,16 +33,16 @@ Those two data sources are sufficient to make a map.  But for New York City, whi
 
 **1. Download the workshop data**
 
-    * Download the workshop folder from [https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip](https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip)
-    * Go to your downloads folder and unzip the file (right-click the file > 7-Zip > Extract Here)
-    It is very import to unzip the the .zip file -- things will not work otherwise!
+  * Download the workshop folder from [https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip](https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip)
+  * Go to your downloads folder and unzip the file (right-click the file > 7-Zip > Extract Here)
+  It is very import to unzip the the .zip file -- things will not work otherwise!
 
 
 **2. Open QGIS**
 
-    * Start menu > QGIS Desktop 3.4.3
+* Start menu > QGIS Desktop 3.4.3
 
-    QGIS is a free, open-source geographic information system that can be used to create maps and perform spatial analysis.  If you would like to install QGIS on your own Windows, Mac, or Linux computer, visit the QGIS web site at [qgis.org](http://qgis.org/)
+QGIS is a free, open-source geographic information system that can be used to create maps and perform spatial analysis.  If you would like to install QGIS on your own Windows, Mac, or Linux computer, visit the QGIS web site at [qgis.org](http://qgis.org/)
 
 
 **3. Load the tract boundaries**
