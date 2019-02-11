@@ -1,6 +1,6 @@
 # GIS Workshop for PAM 5280
 
-Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, spring 2019.
+Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, spring 2019.    
 https://kgjenkins.github.io/pam5280-sp2019/
 
 In this workshop, we will use QGIS create a map of tract-level cancer data for New York City.  The steps below could be modified to map other health variables, or other cities.  (The same methods could also be applied to any other spreadsheet of data that includes tract ids.)  The map we create for New York City will look something like this:
