@@ -40,7 +40,7 @@ Those two data sources are sufficient to make a map.  But for New York City, whi
 
 **2. Open QGIS**
 
-* Start menu > QGIS Desktop 3.4.3
+* Start menu > QGIS 3
 
 QGIS is a free, open-source geographic information system that can be used to create maps and perform spatial analysis.  If you would like to install QGIS on your own Windows, Mac, or Linux computer, visit the QGIS web site at [qgis.org](http://qgis.org/)
 
@@ -149,5 +149,61 @@ To avoid the pixelization caused by reprojecting the basemap image, right-click 
 
 
 10. Creating a Print Layout
+
+Now it's time to decide how our map will appear on a page, or in an exported image.  We can create a print layout that specifies the extent of the map we want to show (just New York City, for example).  With a print layout, we can also add a time, a legend, a scale bar, and other elements to the page.
+
+* Project menu > New Print Layout...
+* Enter a name for the layout, such as "New York City cancer"
+
+First, we add a map to the page:
+
+* Add Item menu > Add Map
+* Drag a box around the part of the page where you want the map.  (You can always adjust the sides later.)
+
+By default, the map will be centered and scaled just as it appeared in the main QGIS window.  To adjust the extent of the map, use "Move Content" tool.
+
+* Edit menu > Move Content
+
+Now you can pan the map content, or zoom with the mouse wheel.  To zoom with finer control, hold the CTRL key while zooming.
+
+
+11. Add a title
+
+* Add Item > Add Label
+* Drag a box where you want the title to appear.
+* In the "Item Properties" on the right, change the default text "Lorem ipsum" to your title, perhaps something like:
+    Model-based estimates for cancer (excluding skin cancer) among adults aged >=18 years - 2016
+* Font options are found in the "Appearance" section below the text
+
+
+12. Add a Legend
+
+* Add Item > Add Legend
+* Drag a box where you want the legend to appear.
+
+The default legend is a bit ugly, as it uses the original layer names, and also shows layers that are not needed.  But we can customize the legend in the legend's Item Properties:
+
+* Uncheck "Auto update" under Legend Items
+* Select and delete (with the `-` button) any rows you don't want to show, like `cdc_500_cities` and `ESRI Gray (light)`.
+* Select `tl_2018_36_tract` and click the "Edit" icon below (pencil on paper) to chance the layer name to "Crude Prevalence %"
+* Fonts can be adjusted in the "Fonts" section of the Item Properties.
+
+
+13. Add a Scale Bar
+
+* Add Item > Add Scale Bar
+* Drag a box where you want the scale bar to appear.
+* Set scalebar units as desired
+* Experiment with the Segments settings
+
+
+14. Export the map image
+
+* Layout menu > Export as image (or PDF)
+
+
+
+
+
 
 
