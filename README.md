@@ -22,12 +22,6 @@ The only location data provided by this CSV file is found in the columns contain
 **Census Tract boundaries**
   * shapefile downloaded from [https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2018&layergroup=Census+Tracts](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2018&layergroup=Census+Tracts)
 
-Those two data sources are sufficient to make a map.  But for New York City, which is on the coast, we will use one additional dataset of water polygons in order make our map more legible, by clearly distinguishing land from water.  (Census tracts often extend across rivers, and into the ocean.)
-
-**Water polygons**
-  * shapefile downloaded (projection: WGS84) from [http://openstreetmapdata.com/data/water-polygons](http://openstreetmapdata.com/data/water-polygons)
-  * this global dataset was clipped to the area surrounding New York City
-
 
 
 ## Step by Step
@@ -197,8 +191,18 @@ The default legend is a bit ugly, as it uses the original layer names, and also 
 * Set scalebar units as desired
 * Experiment with the Segments settings
 
+**14. Add a North Arrow**
 
-**14. Export the map image**
+In QGIS, a north arrow can be added as an SVG image.  (SVG = scalable vector graphic)
+
+* Add Item > Add Picture
+* Drag a box where you want the north arrow to appear.
+* In the Item properties, set the image source by clicking the "..." button and browsing to:   
+    `C:\OSGeo4W64\apps\qgis\svg\arrows\NorthArrow_04.svg` (or one of the other files there)
+* To make the "N" on the arrow more visible, you'll probably want to set the Fill Color to something darker, like a dark gray.
+
+
+**15. Export the map image**
 
 * Layout menu > Export as image (or PDF)
 
