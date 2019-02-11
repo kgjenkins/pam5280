@@ -28,7 +28,7 @@ The only location data provided by this CSV file is found in the columns contain
 
 **1. Download the workshop data**
 
-  * Download the workshop folder from [https://github.com/kgjenkins/pam5280-sp2019/archive/v2.zip](https://github.com/kgjenkins/pam5280-sp2019/archive/v2.zip)
+  * Download the workshop folder from [https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip](https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip)
   * Go to your downloads folder and unzip the file (right-click the file > 7-Zip > Extract Here)
   It is very import to unzip the the .zip file -- things will not work otherwise!
 
