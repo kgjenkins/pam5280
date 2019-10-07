@@ -1,7 +1,7 @@
 # GIS Workshop for PAM 5280
 
 Tutorial written by Keith Jenkins, GIS Librarian at Mann Library, Cornell University, spring 2019.    
-https://kgjenkins.github.io/pam5280-sp2019/
+https://kgjenkins.github.io/pam5280/
 
 In this workshop, we will use QGIS create a map of tract-level cancer data for New York City.  The steps below could be modified to map other health variables, or other cities.  (The same methods could also be applied to any other spreadsheet of data that includes tract ids.)  The map we create for New York City will look something like this:
 
@@ -28,7 +28,7 @@ The only location data provided by this CSV file is found in the columns contain
 
 **1. Download the workshop data**
 
-  * Download the workshop folder from [https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip](https://github.com/kgjenkins/pam5280-sp2019/archive/v1.zip)
+  * Download the workshop folder from [https://github.com/kgjenkins/pam5280/archive/v1.zip](https://github.com/kgjenkins/pam5280/archive/v1.zip)
   * Go to your downloads folder and unzip the file (right-click the file > 7-Zip > Extract Here)
   It is very import to unzip the the .zip file -- things will not work otherwise!
 
